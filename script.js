@@ -1,3 +1,6 @@
+import { Genome, generateMoveOptions, generateEvolvingAnt } from "./evolution.js";
+// import { presetDefinitions } from "./presets.js";
+
 const canvas = document.getElementById('antCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -69,73 +72,10 @@ let rules = {}; // Initialize as empty
 // --- State Storage for Discard --- 
 let lastAppliedState = {};
 
-// Function to generate random rules with variable states/colors
-function generateRandomRules(numStates, numColorsToUse) {
-    const newRules = {};
-    const moveRelativeCheck = document.getElementById('moveRelativeCheck');
-    const moveAbsoluteCheck = document.getElementById('moveAbsoluteCheck');
-    const moveRandomCheck = document.getElementById('moveRandomCheck');
-
-    const useRelative = moveRelativeCheck ? moveRelativeCheck.checked : true; // Default true
-    const useAbsolute = moveAbsoluteCheck ? moveAbsoluteCheck.checked : false;
-    const useRandom = moveRandomCheck ? moveRandomCheck.checked : false;
-
-    let moveOptions = ['S']; // 'S' is always available
-    if (useRelative) {
-        moveOptions.push('L', 'R', 'N', 'U');
-    }
-    if (useAbsolute) {
-        moveOptions.push('^', '>', 'v', '<');
-    }
-    if (useRandom) {
-        moveOptions.push('?');
-    }
-    // Ensure there's at least one move option if all are unchecked (fallback to S, which is already there)
-    if (moveOptions.length === 1 && moveOptions[0] === 'S' && !useRelative && !useAbsolute && !useRandom) {
-        // If only S is present because all checkboxes were somehow unchecked (e.g. by dev tools)
-        // and S was the only thing, let's add N as a minimal non-staying move.
-        // However, S is always present by default, so this case might be rare unless S is removed above.
-        // Let's ensure 'N' if options are truly empty otherwise.
-        if(moveOptions.length === 0) moveOptions.push('N'); 
-    }
-    if (moveOptions.length === 0) moveOptions.push('N'); // Final fallback if list is empty
-
-    for (let s = 0; s < numStates; s++) {
-        newRules[s] = [];
-        for (let c = 0; c < numColorsToUse; c++) {
-            // Write one of the *used* colors (index 0 to numColorsToUse-1)
-            const writeColor = Math.floor(Math.random() * numColorsToUse);
-            const moveIndex = Math.floor(Math.random() * moveOptions.length);
-            const move = moveOptions[moveIndex];
-            const nextState = Math.floor(Math.random() * numStates);
-            newRules[s].push({ writeColor, move, nextState });
-        }
-    }
-    rules = newRules;
-}
-
 // Helper function to generate rules for a single ant
 function generateRandomRulesForAnt(numStates, numColorsToUse) {
     const antSpecificRules = {};
-    const moveRelativeCheck = document.getElementById('moveRelativeCheck');
-    const moveAbsoluteCheck = document.getElementById('moveAbsoluteCheck');
-    const moveRandomCheck = document.getElementById('moveRandomCheck');
-
-    const useRelative = moveRelativeCheck ? moveRelativeCheck.checked : true;
-    const useAbsolute = moveAbsoluteCheck ? moveAbsoluteCheck.checked : false;
-    const useRandom = moveRandomCheck ? moveRandomCheck.checked : false;
-
-    let moveOptions = ['S']; // 'S' is always available
-    if (useRelative) {
-        moveOptions.push('L', 'R', 'N', 'U');
-    }
-    if (useAbsolute) {
-        moveOptions.push('^', '>', 'v', '<');
-    }
-    if (useRandom) {
-        moveOptions.push('?');
-    }
-    if (moveOptions.length === 0) moveOptions.push('N'); // Fallback if all are somehow unchecked
+    const moveOptions = generateMoveOptions();
 
     for (let s = 0; s < numStates; s++) {
         antSpecificRules[s] = [];
@@ -416,9 +356,12 @@ function initAnts(preservedIndividualRules = null) {
             } else {
                 // Otherwise, generate new random rules for this ant
                 // console.log(`Ant ${i}: No preserved rule found or index out of bounds, generating new rule.`); // Optional log
-                const antStates = Math.floor(Math.random() * validatedMaxStates) + 1;
+                const antStates = Math.floor(Math.random() * validatedMaxStates) + 2;
                 const antColors = Math.floor(Math.random() * (validatedMaxColors - 1)) + 2;
-                individualRule = generateRandomRulesForAnt(antStates, antColors);
+                const p1 = new Genome();
+                const p2 = new Genome();
+                individualRule = generateEvolvingAnt(antStates, antColors, p1, p2);
+                // individualRule = generateRandomRulesForAnt(antStates, antColors);
             }
         }
         // If not using individual rules, individualRule remains null, and the ant will use global rules
@@ -490,7 +433,7 @@ function initSimulation(randomize = false, numStates = 1, numColorsToUse = 2, wa
 
     if (randomize) {
         // Generate new global rules, even if individual is checked (provides a base)
-        generateRandomRules(numStates, numColorsToUse);
+        rules = generateRandomRulesForAnt(numStates, numColorsToUse);
     }
     // Load default global rules if none exist
     else if (Object.keys(rules).length === 0) {
@@ -690,11 +633,11 @@ function stepSingleAntLogic(ant) {
         return; 
     }
     
-    // --- Record change only if color is different ---
+    const oldCellKey = `${currentCellX},${currentCellY}`;
+    cellsToUpdate.add(oldCellKey);
     if (rule.writeColor !== currentCellColor) {
         grid[currentCellY][currentCellX] = rule.writeColor;
-        cellsToUpdate.add(`${currentCellX},${currentCellY}`); 
-    } 
+    }
 
     let dx = 0, dy = 0;
     // --- Determine Direction Change --- 
@@ -730,6 +673,11 @@ function stepSingleAntLogic(ant) {
     // Apply movement
     ant.x += dx;
     ant.y += dy;
+
+    const newCellKey = `${ant.x},${ant.y}`;
+    if (newCellKey !== oldCellKey) {
+        cellsToUpdate.add(newCellKey);
+    }
 }
 
 // Called by setInterval in Normal Mode

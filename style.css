@@ -74,11 +74,6 @@ canvas {
     display: none;
 }
 
-/* Header remains visible when minimized */
-#controlPanel.minimized .panel-header {
-    /* No specific changes needed, should just be visible */
-}
-
 #controlPanel.minimized .panel-header #minimizeBtn {
     display: none;
 }
@@ -410,10 +405,6 @@ canvas {
     margin-bottom: 3px; /* Less space below */
     justify-content: flex-start; /* Align left */
     gap: 5px; /* Smaller gap for checkbox */
-}
-
-.input-container label {
-    /* Inherits general label style */
 }
 
 .input-container input[type="number"] {
