@@ -1,5 +1,4 @@
 import { Genome, generateMoveOptions, generateEvolvingAnt } from "./evolution.js";
-// import { presetDefinitions } from "./presets.js";
 
 const canvas = document.getElementById('antCanvas');
 const ctx = canvas.getContext('2d');
@@ -347,24 +346,37 @@ function initAnts(preservedIndividualRules = null) {
         occupied.add(`${gridX},${gridY}`); // Mark as occupied
 
         let individualRule = null;
+        let antNumStates = 1;
+        let antNumColors = 2;
+        let antGenome = null;
+
         // Check if using individual rules
         if (useIndividualRules) {
             // Prioritize using preserved rules if available for this index
             if (preservedIndividualRules && i < preservedIndividualRules.length && preservedIndividualRules[i]) {
-                individualRule = preservedIndividualRules[i];
-                // console.log(`Ant ${i}: Using preserved rule.`); // Optional log
+                const preserved = preservedIndividualRules[i];
+                individualRule = preserved.individualRule;
+                antNumStates = preserved.numStates || 1;
+                antNumColors = preserved.numColors || 2;
+                antGenome = preserved.genome || new Genome();
+                // console.log(`Ant ${i}: Using preserved rule and metadata.`); // Optional log
             } else {
                 // Otherwise, generate new random rules for this ant
                 // console.log(`Ant ${i}: No preserved rule found or index out of bounds, generating new rule.`); // Optional log
-                const antStates = Math.floor(Math.random() * validatedMaxStates) + 2;
-                const antColors = Math.floor(Math.random() * (validatedMaxColors - 1)) + 2;
-                const p1 = new Genome();
-                const p2 = new Genome();
-                individualRule = generateEvolvingAnt(antStates, antColors, p1, p2);
-                // individualRule = generateRandomRulesForAnt(antStates, antColors);
+                antNumStates = Math.floor(Math.random() * validatedMaxStates) + 2;
+                antNumColors = Math.floor(Math.random() * (validatedMaxColors - 1)) + 2;
+                const p1 = new Genome(Math.floor(Math.random() * validatedMaxColors), 1);
+                const p2 = new Genome(Math.floor(Math.random() * validatedMaxColors), 1);
+                [individualRule, antGenome] = generateEvolvingAnt(antNumStates, antNumColors, p1, p2);
             }
+        } else {
+            // Non-individual rules still carry the global rule metadata for offspring generation
+            const globalStates = Object.keys(rules).length || 1;
+            const globalColors = rules[0] ? rules[0].length : 2;
+            antNumStates = globalStates;
+            antNumColors = globalColors;
+            antGenome = null;
         }
-        // If not using individual rules, individualRule remains null, and the ant will use global rules
 
         // Determine initial direction
         let initialDir = 0; // Default North/Up
@@ -378,9 +390,13 @@ function initAnts(preservedIndividualRules = null) {
         }
 
         const newAnt = {
-            x: gridX, y: gridY,
+            x: gridX,
+            y: gridY,
             dir: initialDir,
             state: 0,
+            numStates: antNumStates,
+            numColors: antNumColors,
+            genome: antGenome,
             individualRule: individualRule // Assign preserved or newly generated rule
         };
         ants.push(newAnt);
@@ -423,11 +439,16 @@ function initSimulation(randomize = false, numStates = 1, numColorsToUse = 2, wa
     const antCountInput = document.getElementById('antCountInput');
     const antCount = antCountInput ? parseInt(antCountInput.value, 10) : 1;
 
-    // --- Preserve individual rules if resetting without randomizing ---
+    // --- Preserve individual ant metadata if resetting without randomizing ---
     let preservedIndividualRules = null;
     if (!randomize && useIndividual && antCount > 0 && ants.length > 0) {
-        preservedIndividualRules = ants.map(ant => ant?.individualRule).filter(rule => rule); // Get existing rules
-        console.log(`Preserving ${preservedIndividualRules.length} individual rules.`);
+        preservedIndividualRules = ants.map(ant => ({
+            individualRule: ant?.individualRule,
+            numStates: ant?.numStates,
+            numColors: ant?.numColors,
+            genome: ant?.genome
+        })).filter(ruleInfo => ruleInfo.individualRule);
+        console.log(`Preserving ${preservedIndividualRules.length} individual rules and metadata.`);
     }
     // --- End preservation ---
 
@@ -594,8 +615,29 @@ function updateButtonText() {
     if (btn) btn.innerHTML = isRunning ? '❚❚' : '▶';
 }
 
+// Helper function to find if an ant is at a specific position, excluding a specific index (for collision checking)
+function findAntIndexAt(x, y, excludeIndex = -1) {
+    for (let i = 0; i < ants.length; i++) {
+        if (i === excludeIndex) continue;
+        const other = ants[i];
+        if (!other) continue;
+        if (other.x === x && other.y === y) return i;
+    }
+    return -1;
+}
+
+// Function to create offspring rules based on two parent ants' rules
+function createCollisionOffspring(parentA, parentB) {
+    const numStates = Math.max(1, parentA.numStates || 1, parentB.numStates || 1);
+    const numColors = Math.max(2, parentA.numColors || 2, parentB.numColors || 2);
+    const parentGenomeA = parentA.genome || new Genome();
+    const parentGenomeB = parentB.genome || new Genome();
+    const [childRule, childGenome] = generateEvolvingAnt(numStates, numColors, parentGenomeA, parentGenomeB);
+    return [childRule, childGenome];
+}
+
 // Renamed and parameterized
-function stepSingleAntLogic(ant) {
+function stepSingleAntLogic(ant, antIndex) {
     if (!grid || !ant) return; // Check individual ant
     if (ant.state === -1) return; // HALT state: do nothing further
     if (gridCols <= 0 || gridRows <= 0) return;
@@ -605,9 +647,6 @@ function stepSingleAntLogic(ant) {
 
     if (!grid[ant.y] || ant.y < 0 || ant.y >= grid.length || ant.x < 0 || ant.x >= grid[ant.y].length) {
          console.error("Ant out of bounds after wrap:", ant);
-         // Optionally reset the specific ant instead of returning?
-         // ant.x = Math.floor(gridCols / 2);
-         // ant.y = Math.floor(gridRows / 2);
          return;
      }
 
@@ -678,6 +717,26 @@ function stepSingleAntLogic(ant) {
     if (newCellKey !== oldCellKey) {
         cellsToUpdate.add(newCellKey);
     }
+
+    // Collision handling: if another ant is already on this cell, replace one parent with the child.
+    const collisionIndex = findAntIndexAt(ant.x, ant.y, antIndex);
+    if (collisionIndex >= 0) {
+        const otherAnt = ants[collisionIndex];
+        const [childRule, childGenome] = createCollisionOffspring(ant, otherAnt);
+        const replaceIndex = Math.random() < 0.5 ? antIndex : collisionIndex;
+        const recipientAnt = ants[replaceIndex];
+        if (recipientAnt) {
+            recipientAnt.x = ant.x;
+            recipientAnt.y = ant.y;
+            recipientAnt.dir = Math.floor(Math.random() * 4);
+            recipientAnt.state = 0;
+            recipientAnt.numStates = Math.max(1, ant.numStates || 1, otherAnt.numStates || 1);
+            recipientAnt.numColors = Math.max(2, ant.numColors || 2, otherAnt.numColors || 2);
+            recipientAnt.genome = childGenome;
+            recipientAnt.individualRule = childRule;
+            cellsToUpdate.add(`${recipientAnt.x},${recipientAnt.y}`);
+        }
+    }
 }
 
 // Called by setInterval in Normal Mode
@@ -688,7 +747,7 @@ function runSimulationTick() {
          return;
      }
     for (let i = 0; i < currentStepsPerTick; i++) {
-        stepSingleAntLogic(ants[i]);
+        stepSingleAntLogic(ants[i], i);
     }
     requestAnimationFrame(draw); // Use rAF for drawing
 }
@@ -703,7 +762,7 @@ function runMaxSpeedLoop() {
 
     // Run the batch of steps
     for (let i = 0; i < currentStepsPerTick; i++) {
-        stepSingleAntLogic(ants[i]);
+        stepSingleAntLogic(ants[i], i);
     }
 
     // Draw the result of the batch
@@ -805,8 +864,15 @@ function drawUpdates() {
     setCanvasSmoothing(false);
     const cellSize = 1;
 
-    // --- Draw all cells marked for update --- 
-    cellsToUpdate.forEach(coordString => {
+    // --- Draw all cells marked for update plus all cells currently occupied by ants ---
+    const updatedCells = new Set(cellsToUpdate);
+    for (let i = 0; i < ants.length; i++) {
+        const ant = ants[i];
+        if (!ant) continue;
+        updatedCells.add(`${ant.x},${ant.y}`);
+    }
+
+    updatedCells.forEach(coordString => {
         const [xStr, yStr] = coordString.split(',');
         const x = parseInt(xStr, 10);
         const y = parseInt(yStr, 10);
@@ -827,14 +893,14 @@ function drawUpdates() {
         }
     });
 
-    // --- 3. Draw Ants in their NEW positions (Enable Smoothing) --- 
+    // --- Draw Ants in their NEW positions (Enable Smoothing) --- 
     setCanvasSmoothing(true); // Enable AA for shapes
     for (let i = 0; i < ants.length; i++) {
         if (ants[i]) drawAntShape(ants[i]); // Call without isFullRedraw
     }
     setCanvasSmoothing(false);
 
-    // --- 4. Clear the update set for the next frame --- 
+    // --- Clear the update set for the next frame --- 
     cellsToUpdate.clear();
 }
 
@@ -1611,7 +1677,7 @@ function simulationLoop() {
             cellsToUpdate.add(`${prevX},${prevY}`);
 
             // 2. Execute step for this ant
-            stepSingleAntLogic(ant);
+            stepSingleAntLogic(ant, i);
 
             // 3. Record new location after stepping
             cellsToUpdate.add(`${ant.x},${ant.y}`);

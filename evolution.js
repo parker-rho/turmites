@@ -3,12 +3,16 @@
 export class Genome {
     constructor(
         mean = 0, 
-        variance = 2
+        variance = 1
     ) {
         this.mean = mean;
         this.variance = variance;
     }
 }
+
+const MUTATION_COEFFICIENT = 0.1;
+const MUTATION_STRENGTH = 12;
+const MUTATION_GENOME = new Genome(0, MUTATION_STRENGTH);
 
 // Helper function to generate the possible move options based on user selections
 export function generateMoveOptions() {
@@ -36,14 +40,14 @@ export function generateMoveOptions() {
 }
 
 // Use the methods we learned in class to sample from a normal distribution.
-function uniformNormalSample(mean, variance) {
+function uniformNormalSample(genome) {
     const theta = Math.random();
     const U = Math.random();
     const R = Math.sqrt(2 * Math.log(1/(1 - U)));
 
     const X = R * Math.cos(2 * Math.PI * theta);
     
-    return Math.sqrt(variance) * X + mean;
+    return Math.sqrt(genome.variance) * X + genome.mean;
 }
 
 // This function generates a new ant with rules based on the genomes of its parents. 
@@ -52,14 +56,14 @@ export function generateEvolvingAnt(numStates, numColors, p1, p2) {
     const antSpecificRules = {};
     const moveOptions = generateMoveOptions();
 
-    const genome = new Genome((p1.mean + p2.mean)/2, (p1.variance + p2.variance)/4);
+    const epsilon = uniformNormalSample(MUTATION_GENOME) * MUTATION_COEFFICIENT;    
+    const genome = new Genome(((1 - MUTATION_COEFFICIENT) * ((p1.mean + p2.mean)/2)) + epsilon, 1);
 
     for (let s = 0; s < numStates; s++) {
         antSpecificRules[s] = [];
         for (let c = 0; c < numColors; c++) {
-            let writeColor = Math.floor(uniformNormalSample(genome.mean, genome.variance));
+            let writeColor = Math.floor(uniformNormalSample(genome));
             writeColor = ((writeColor % numColors) + numColors) % numColors; // normalize to [0, numColors-1]
-            console.log(`Ant ${s}, Color ${c}: Write Color = ${writeColor}`);
             const moveIndex = Math.floor(Math.random() * moveOptions.length);
             const move = moveOptions[moveIndex];
             const nextState = Math.floor(Math.random() * numStates);
@@ -67,5 +71,6 @@ export function generateEvolvingAnt(numStates, numColors, p1, p2) {
         }
     }
 
-    return antSpecificRules;
+    console.log('Generated Ant with Genome:', genome);
+    return [antSpecificRules, genome];
 }
