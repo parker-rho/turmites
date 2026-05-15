@@ -1,4 +1,14 @@
-import { Genome, generateMoveOptions, generateEvolvingAnt } from "./evolution.js";
+import { 
+    Genome,
+    generateMoveOptions,
+    generateEvolvingAnt
+} from "./evolution.js";
+
+import {
+    recordAntBirth,
+    simulationData,
+    exportSimulationData
+} from './data.js';
 
 const canvas = document.getElementById('antCanvas');
 const ctx = canvas.getContext('2d');
@@ -7,6 +17,8 @@ let width, height;
 const cellSize = 1; // Logical size of each cell (we zoom the canvas, not change this)
 let grid;
 let ants = []; // Array to hold multiple ants
+let antID = 1; // To assign unique IDs to ants for data recording
+let tick = 0;
 let gridCols = 0, gridRows = 0;
 let intervalId = null;
 let stepsPerTick; // Number of steps to run per interval tick
@@ -43,7 +55,7 @@ let timeoutId = null; // ID for setTimeout loop (replaced animationFrameId)
 
 // --- Configuration ---
 const minSimSpeed = 1;       // Min Steps/Sec at slider value 1
-const midSimSpeed = 60;      // Steps/Sec at slider midpoint (50)
+const midSimSpeed = 1000;      // Steps/Sec at slider midpoint (50)
 const maxSimSpeed = 100000;   // Max Target Steps/Sec at slider value 100 (Adjusted)
 const maxStepsPerLoopIteration = 100000; // Safety limit
 
@@ -365,9 +377,11 @@ function initAnts(preservedIndividualRules = null) {
                 // console.log(`Ant ${i}: No preserved rule found or index out of bounds, generating new rule.`); // Optional log
                 antNumStates = Math.floor(Math.random() * validatedMaxStates) + 2;
                 antNumColors = Math.floor(Math.random() * (validatedMaxColors - 1)) + 2;
-                const p1 = new Genome(Math.floor(Math.random() * validatedMaxColors), 1);
-                const p2 = new Genome(Math.floor(Math.random() * validatedMaxColors), 1);
+                const p1 = new Genome(Math.floor(Math.random() * validatedMaxColors), 0.5);
+                const p2 = new Genome(Math.floor(Math.random() * validatedMaxColors), 0.5);
                 [individualRule, antGenome] = generateEvolvingAnt(antNumStates, antNumColors, p1, p2);
+                // Record the birth of this new ant with its genome and rules
+                recordAntBirth({ genome: antGenome, rules: individualRule, parentIds: [0, 0] }, 0); // Tick 0 for initial generation
             }
         } else {
             // Non-individual rules still carry the global rule metadata for offspring generation
@@ -397,10 +411,12 @@ function initAnts(preservedIndividualRules = null) {
             numStates: antNumStates,
             numColors: antNumColors,
             genome: antGenome,
-            individualRule: individualRule // Assign preserved or newly generated rule
+            individualRule: individualRule, // Assign preserved or newly generated rule
+            id: antID // Unique ID for this ant, useful for tracking in data
         };
         ants.push(newAnt);
         cellsToUpdate.add(`${gridX},${gridY}`);
+        antID++; // Increment global ant ID for next ant
     }
 }
 
@@ -561,54 +577,6 @@ function initSimulation(randomize = false, numStates = 1, numColorsToUse = 2, wa
     // console.log("Stored State:", lastAppliedState); // Optional: Debug log
 }
 
-function startSimulation() {
-    stopSimulation(); // Clear any existing timers/loops first
-    if (currentIntervalId || timeoutId) { console.warn("startSimulation called while already running?"); return; }
-
-    console.log("startSimulation called. Setting up timer/loop...");
-    isRunning = true;
-    updateButtonText();
-
-    const fpsSlider = document.getElementById('fpsSlider');
-    const stepsSlider = document.getElementById('stepsSlider');
-    const targetFPS = fpsSlider ? parseInt(fpsSlider.value, 10) : 60;
-    currentStepsPerTick = stepsSlider ? parseInt(stepsSlider.value, 10) : 1;
-    currentStepsPerTick = Math.max(1, currentStepsPerTick);
-
-    if (targetFPS >= 240) { // Check against new max value
-        // Max Speed Mode: Use setTimeout loop
-        currentIntervalDelay = 0; // Indicate no fixed interval
-        console.log(`Starting MAX Speed Mode (setTimeout): Steps/Tick=${currentStepsPerTick}`);
-        runMaxSpeedLoop(); // Start the loop
-    } else if (targetFPS >= 1) {
-        // Normal Mode: Calculate delay from FPS
-        currentIntervalDelay = Math.round(1000 / targetFPS);
-        console.log(`Starting Normal Mode: Target FPS=${targetFPS}, Interval=${currentIntervalDelay}ms, Steps/Tick=${currentStepsPerTick}`);
-        currentIntervalId = setInterval(runSimulationTick, currentIntervalDelay);
-        console.log(` -> intervalId set: ${currentIntervalId}`);
-    } else {
-        // Fallback
-        currentIntervalDelay = 1000; // 1 FPS
-        console.warn(`Invalid Target FPS (${targetFPS}), defaulting to 1 FPS.`);
-        currentIntervalId = setInterval(runSimulationTick, currentIntervalDelay);
-        console.log(` -> intervalId set (fallback): ${currentIntervalId}`);
-    }
-}
-
-function stopSimulation() {
-    if (currentIntervalId) {
-        console.log(`Clearing intervalId: ${currentIntervalId}`);
-        clearInterval(currentIntervalId);
-        currentIntervalId = null;
-    }
-    if (timeoutId) {
-        console.log(`Clearing timeoutId: ${timeoutId}`);
-        clearTimeout(timeoutId);
-        timeoutId = null;
-    }
-    console.log("Simulation timer/loop stopped.");
-}
-
 function updateButtonText() {
     const btn = document.getElementById('startStopBtn');
     // Use literal symbols for Play (▶ U+25B6) and Pause (❚❚)
@@ -627,17 +595,20 @@ function findAntIndexAt(x, y, excludeIndex = -1) {
 }
 
 // Function to create offspring rules based on two parent ants' rules
-function createCollisionOffspring(parentA, parentB) {
+function createCollisionOffspring(parentA, parentB, tick) {
     const numStates = Math.max(1, parentA.numStates || 1, parentB.numStates || 1);
     const numColors = Math.max(2, parentA.numColors || 2, parentB.numColors || 2);
     const parentGenomeA = parentA.genome || new Genome();
     const parentGenomeB = parentB.genome || new Genome();
     const [childRule, childGenome] = generateEvolvingAnt(numStates, numColors, parentGenomeA, parentGenomeB);
+
+    recordAntBirth({ genome: childGenome, rules: childRule, parentIds: [parentA.id, parentB.id] }, tick);
+
     return [childRule, childGenome];
 }
 
 // Renamed and parameterized
-function stepSingleAntLogic(ant, antIndex) {
+function stepSingleAntLogic(ant, antIndex, tick) {
     if (!grid || !ant) return; // Check individual ant
     if (ant.state === -1) return; // HALT state: do nothing further
     if (gridCols <= 0 || gridRows <= 0) return;
@@ -722,7 +693,7 @@ function stepSingleAntLogic(ant, antIndex) {
     const collisionIndex = findAntIndexAt(ant.x, ant.y, antIndex);
     if (collisionIndex >= 0) {
         const otherAnt = ants[collisionIndex];
-        const [childRule, childGenome] = createCollisionOffspring(ant, otherAnt);
+        const [childRule, childGenome] = createCollisionOffspring(ant, otherAnt, tick);
         const replaceIndex = Math.random() < 0.5 ? antIndex : collisionIndex;
         const recipientAnt = ants[replaceIndex];
         if (recipientAnt) {
@@ -734,44 +705,11 @@ function stepSingleAntLogic(ant, antIndex) {
             recipientAnt.numColors = Math.max(2, ant.numColors || 2, otherAnt.numColors || 2);
             recipientAnt.genome = childGenome;
             recipientAnt.individualRule = childRule;
+            recipientAnt.id = antID; // Optionally assign a new ID if needed for tracking
             cellsToUpdate.add(`${recipientAnt.x},${recipientAnt.y}`);
         }
+        antID++; // Increment global ant ID for next new ant
     }
-}
-
-// Called by setInterval in Normal Mode
-function runSimulationTick() {
-    if (!isRunning) {
-         if (currentIntervalId) clearInterval(currentIntervalId);
-         currentIntervalId = null;
-         return;
-     }
-    for (let i = 0; i < currentStepsPerTick; i++) {
-        stepSingleAntLogic(ants[i], i);
-    }
-    requestAnimationFrame(draw); // Use rAF for drawing
-}
-
-// Called recursively by setTimeout in Max Speed Mode
-function runMaxSpeedLoop() {
-    if (!isRunning) {
-        timeoutId = null; // Ensure ID is cleared if stopped
-        console.log("Max speed loop detected isRunning=false, stopping.");
-        return; // Stop the loop
-    }
-
-    // Run the batch of steps
-    for (let i = 0; i < currentStepsPerTick; i++) {
-        stepSingleAntLogic(ants[i], i);
-    }
-
-    // Draw the result of the batch
-    // Using requestAnimationFrame here ensures drawing happens smoothly,
-    // but the *next* simulation batch starts via setTimeout immediately after this call.
-    requestAnimationFrame(draw);
-
-    // Schedule the next batch immediately
-    timeoutId = setTimeout(runMaxSpeedLoop, 0);
 }
 
 // --- Drawing ---
@@ -1665,8 +1603,11 @@ function simulationLoop() {
     const mappedSpeed = mapSliderToSpeed(targetSpeed);
     const stepDuration = (mappedSpeed > 0) ? 1000 / mappedSpeed : Infinity;
 
+    tick++;
+
     // Determine how many full simulation ticks (all ants move once) should have passed
     while (now >= nextStepTime && totalStepsExecutedThisLoop < maxStepsPerLoopIteration) {
+        // console.log(`Executing simulation tick ${tick} at time ${now.toFixed(2)}ms (scheduled for ${nextStepTime.toFixed(2)}ms)`);
         for (let i = 0; i < ants.length; i++) {
             const ant = ants[i];
             if (!ant) continue;
@@ -1677,11 +1618,13 @@ function simulationLoop() {
             cellsToUpdate.add(`${prevX},${prevY}`);
 
             // 2. Execute step for this ant
-            stepSingleAntLogic(ant, i);
+            stepSingleAntLogic(ant, i, tick);
 
             // 3. Record new location after stepping
             cellsToUpdate.add(`${ant.x},${ant.y}`);
         }
+
+        
 
         nextStepTime += stepDuration;
         totalStepsExecutedThisLoop += ants.length;
@@ -1697,6 +1640,10 @@ function simulationLoop() {
 
     const timeToNext = Math.max(0, nextStepTime - performance.now());
     simulationTimeoutId = setTimeout(simulationLoop, timeToNext);
+    
+    if (tick === 10000) {
+        exportSimulationData(tick);
+    }
 }
 
 function startSimulationLoop() {

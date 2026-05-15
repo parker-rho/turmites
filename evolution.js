@@ -3,7 +3,7 @@
 export class Genome {
     constructor(
         mean = 0, 
-        variance = 1
+        variance = 0.5
     ) {
         this.mean = mean;
         this.variance = variance;
@@ -11,7 +11,7 @@ export class Genome {
 }
 
 const MUTATION_COEFFICIENT = 0.1;
-const MUTATION_STRENGTH = 12;
+const MUTATION_STRENGTH = 1;
 const MUTATION_GENOME = new Genome(0, MUTATION_STRENGTH);
 
 // Helper function to generate the possible move options based on user selections
@@ -57,7 +57,7 @@ export function generateEvolvingAnt(numStates, numColors, p1, p2) {
     const moveOptions = generateMoveOptions();
 
     const epsilon = uniformNormalSample(MUTATION_GENOME) * MUTATION_COEFFICIENT;    
-    const genome = new Genome(((1 - MUTATION_COEFFICIENT) * ((p1.mean + p2.mean)/2)) + epsilon, 1);
+    const genome = new Genome(((p1.mean + p2.mean)/2) + epsilon, 0.5);
 
     for (let s = 0; s < numStates; s++) {
         antSpecificRules[s] = [];
