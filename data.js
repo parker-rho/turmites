@@ -23,7 +23,7 @@ export function recordAntBirth(ant, tick) {
         stateCount: Object.keys(ant.rules).length
     });
 
-    console.log(`Ant born at tick ${tick}`  + (ant.parentIds ? ` with parents ${ant.parentIds.join(', ')}` : '') + ` and genome (mean: ${ant.genome.mean.toFixed(3)}, variance: ${ant.genome.variance.toFixed(3)})`);
+    // console.log(`Ant born at tick ${tick}`  + (ant.parentIds ? ` with parents ${ant.parentIds.join(', ')}` : '') + ` and genome (mean: ${ant.genome.mean.toFixed(3)}, variance: ${ant.genome.variance.toFixed(3)})`);
 }
 
 export function exportSimulationData(tick) {

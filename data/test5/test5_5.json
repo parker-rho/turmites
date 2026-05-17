@@ -1,0 +1,6209 @@
+{
+  "ants": [
+    {
+      "tick": 0,
+      "genome": {
+        "mean": 5.033863211733698,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 4,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 5,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 4,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 4,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 0
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 4,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 3,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 4,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 5,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 5,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 4,
+            "move": "N",
+            "nextState": 1
+          }
+        ]
+      },
+      "parentIds": [
+        0,
+        0
+      ],
+      "stateCount": 2
+    },
+    {
+      "tick": 0,
+      "genome": {
+        "mean": 9.514213276901362,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 1,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          }
+        ]
+      },
+      "parentIds": [
+        0,
+        0
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 0,
+      "genome": {
+        "mean": 7.199041492931895,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 1,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 1,
+            "move": "U",
+            "nextState": 0
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 1,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 1,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 1,
+            "move": "R",
+            "nextState": 2
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 2,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 1,
+            "move": "R",
+            "nextState": 2
+          }
+        ]
+      },
+      "parentIds": [
+        0,
+        0
+      ],
+      "stateCount": 3
+    },
+    {
+      "tick": 0,
+      "genome": {
+        "mean": 11.725750818593633,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 2,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 2,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 2,
+            "move": "R",
+            "nextState": 0
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 2,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 1,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 1
+          }
+        ]
+      },
+      "parentIds": [
+        0,
+        0
+      ],
+      "stateCount": 2
+    },
+    {
+      "tick": 1,
+      "genome": {
+        "mean": 9.631331056738611,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 3
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 0
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          }
+        ]
+      },
+      "parentIds": [
+        2,
+        4
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 1,
+      "genome": {
+        "mean": 8.92018048587216,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 2
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 2
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          }
+        ]
+      },
+      "parentIds": [
+        3,
+        5
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 1,
+      "genome": {
+        "mean": 7.974508706644798,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 6,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 4
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 6,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 6,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 0
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 6,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 1
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 6,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 1
+          }
+        ]
+      },
+      "parentIds": [
+        6,
+        1
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 1,
+      "genome": {
+        "mean": 7.880433606984223,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 6,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 0
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 6,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 0
+          }
+        ]
+      },
+      "parentIds": [
+        7,
+        6
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 1,
+      "genome": {
+        "mean": 9.216077151326356,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 3
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          }
+        ]
+      },
+      "parentIds": [
+        7,
+        8
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 285,
+      "genome": {
+        "mean": 8.114591219288993,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 6,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 6,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 6,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 6,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 0
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          }
+        ]
+      },
+      "parentIds": [
+        9,
+        7
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 286,
+      "genome": {
+        "mean": 7.855270832517116,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 3
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 2
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 6,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 3
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 3
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 6,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 6,
+            "move": "L",
+            "nextState": 3
+          }
+        ]
+      },
+      "parentIds": [
+        9,
+        10
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 294,
+      "genome": {
+        "mean": 9.625983224261134,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 1
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 0
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 1,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 4
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          }
+        ]
+      },
+      "parentIds": [
+        9,
+        11
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 295,
+      "genome": {
+        "mean": 9.380418900951499,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 1
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 0
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          }
+        ]
+      },
+      "parentIds": [
+        11,
+        12
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 295,
+      "genome": {
+        "mean": 9.114401487881675,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 3
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 0
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          }
+        ]
+      },
+      "parentIds": [
+        13,
+        12
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 310,
+      "genome": {
+        "mean": 9.36379078105895,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          }
+        ]
+      },
+      "parentIds": [
+        13,
+        14
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 310,
+      "genome": {
+        "mean": 9.758178843682794,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 1,
+            "move": "R",
+            "nextState": 3
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 2
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          }
+        ]
+      },
+      "parentIds": [
+        13,
+        15
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 310,
+      "genome": {
+        "mean": 8.82500983004662,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 0
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 3
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          }
+        ]
+      },
+      "parentIds": [
+        15,
+        16
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 311,
+      "genome": {
+        "mean": 7.678770644046218,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 6,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 6,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 1
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 6,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 4
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 5,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 6,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 6,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 6,
+            "move": "U",
+            "nextState": 2
+          }
+        ]
+      },
+      "parentIds": [
+        16,
+        17
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 313,
+      "genome": {
+        "mean": 8.943961205143086,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 3
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          }
+        ]
+      },
+      "parentIds": [
+        18,
+        16
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 313,
+      "genome": {
+        "mean": 8.57301123014013,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 3
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 7,
+            "move": "S",
+            "nextState": 1
+          }
+        ]
+      },
+      "parentIds": [
+        19,
+        16
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 358,
+      "genome": {
+        "mean": 11.265010784663202,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 1,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 1,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 2,
+            "move": "U",
+            "nextState": 2
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 2,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 2,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 2,
+            "move": "R",
+            "nextState": 1
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 2,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 1,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 2,
+            "move": "L",
+            "nextState": 1
+          }
+        ]
+      },
+      "parentIds": [
+        4,
+        3
+      ],
+      "stateCount": 3
+    },
+    {
+      "tick": 358,
+      "genome": {
+        "mean": 8.94302019032537,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 0
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 2,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 2
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 2,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          }
+        ]
+      },
+      "parentIds": [
+        21,
+        3
+      ],
+      "stateCount": 3
+    },
+    {
+      "tick": 399,
+      "genome": {
+        "mean": 9.748091737149034,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 1,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 1,
+            "move": "S",
+            "nextState": 0
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 1,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 2
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 0
+          }
+        ]
+      },
+      "parentIds": [
+        22,
+        21
+      ],
+      "stateCount": 3
+    },
+    {
+      "tick": 399,
+      "genome": {
+        "mean": 10.574290656319224,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 1,
+            "move": "L",
+            "nextState": 2
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 1,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 1,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 1,
+            "move": "N",
+            "nextState": 0
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 2,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 1,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 1,
+            "move": "L",
+            "nextState": 2
+          }
+        ]
+      },
+      "parentIds": [
+        23,
+        22
+      ],
+      "stateCount": 3
+    },
+    {
+      "tick": 665,
+      "genome": {
+        "mean": 10.253000913886641,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 1,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 3
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 2,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 1,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 1,
+            "move": "S",
+            "nextState": 4
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 3
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 1,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 1
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 1,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 1,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 1
+          }
+        ]
+      },
+      "parentIds": [
+        20,
+        16
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 665,
+      "genome": {
+        "mean": 8.866068233746994,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 1
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 3
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 7,
+            "move": "R",
+            "nextState": 2
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 7,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          }
+        ]
+      },
+      "parentIds": [
+        25,
+        20
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 1173,
+      "genome": {
+        "mean": 9.965666032983023,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 1,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 1,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 2
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          },
+          {
+            "writeColor": 1,
+            "move": "R",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 1
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 1,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 1,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 2
+          }
+        ]
+      },
+      "parentIds": [
+        26,
+        20
+      ],
+      "stateCount": 5
+    },
+    {
+      "tick": 1173,
+      "genome": {
+        "mean": 9.561649418191774,
+        "variance": 0.5
+      },
+      "rules": {
+        "0": [
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 3
+          }
+        ],
+        "1": [
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 3
+          },
+          {
+            "writeColor": 8,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "N",
+            "nextState": 1
+          },
+          {
+            "writeColor": 0,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          }
+        ],
+        "2": [
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 3
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 0
+          },
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 4
+          }
+        ],
+        "3": [
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 3
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 0
+          },
+          {
+            "writeColor": 0,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 8,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 3
+          }
+        ],
+        "4": [
+          {
+            "writeColor": 9,
+            "move": "U",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "S",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "L",
+            "nextState": 2
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 4
+          },
+          {
+            "writeColor": 9,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 8,
+            "move": "S",
+            "nextState": 2
+          },
+          {
+            "writeColor": 0,
+            "move": "R",
+            "nextState": 1
+          },
+          {
+            "writeColor": 9,
+            "move": "N",
+            "nextState": 4
+          },
+          {
+            "writeColor": 8,
+            "move": "R",
+            "nextState": 2
+          }
+        ]
+      },
+      "parentIds": [
+        27,
+        26
+      ],
+      "stateCount": 5
+    }
+  ]
+}

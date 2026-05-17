@@ -10,9 +10,9 @@ export class Genome {
     }
 }
 
-const MUTATION_COEFFICIENT = 0.1;
-const MUTATION_STRENGTH = 1;
-const MUTATION_GENOME = new Genome(0, MUTATION_STRENGTH);
+const MUTATION_STRENGTH = 0.1;
+const MUTATION_NOISE = 1;
+const MUTATION_GENOME = new Genome(0, MUTATION_NOISE);
 
 // Helper function to generate the possible move options based on user selections
 export function generateMoveOptions() {
@@ -56,7 +56,7 @@ export function generateEvolvingAnt(numStates, numColors, p1, p2) {
     const antSpecificRules = {};
     const moveOptions = generateMoveOptions();
 
-    const epsilon = uniformNormalSample(MUTATION_GENOME) * MUTATION_COEFFICIENT;    
+    const epsilon = uniformNormalSample(MUTATION_GENOME) * MUTATION_STRENGTH;    
     const genome = new Genome(((p1.mean + p2.mean)/2) + epsilon, 0.5);
 
     for (let s = 0; s < numStates; s++) {
@@ -71,6 +71,8 @@ export function generateEvolvingAnt(numStates, numColors, p1, p2) {
         }
     }
 
-    console.log('Generated Ant with Genome:', genome);
+    // console.log('Generated Ant with Genome:', genome);
+    // console log the mutation parameters of this current simulation
+    console.log(`Mutation Coefficient: ${MUTATION_STRENGTH}, Mutation Noise: ${MUTATION_NOISE}`);
     return [antSpecificRules, genome];
 }
