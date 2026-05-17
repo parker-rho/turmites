@@ -1,2 +1,12 @@
 To run the simulation, get the Live Server extension in VSCode and then right click index.html and select 
 "Open with Live Server" which should open the website in your default browser and you can play around with the settings!
+
+Also the software that I wrote is mostly contained in evolution.js, data.js, and data/analyze.py
+I did make tweaks to the code in script.js and that was mostly cleaning up the useless functions that the AI wrote for
+Mr. Emergent Garden and adding in my functions from evolution.js and data.js.
+
+I used Claude to help me with collecting the data in data.js as well as with visualizing the data in analyze.py since
+I'm not super familiar with working on those kinds of scenarios.
+
+For the full in-depth details of exactly what I edited from the original software, here is a link to my GitHub repo:
+https://github.com/parker-rho/turmites/tree/main
